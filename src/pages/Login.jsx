@@ -93,7 +93,7 @@ const LoginPage = () => {
                   Ingresar
                 </button>
 
-                <p className="d-block text-center mt-4">O Ingresar con: </p>
+                {/* <p className="d-block text-center mt-4">O Ingresar con: </p> */}
                 {/* <div className="d-flex justify-content-center text-center pt-1">
                   <button
                     onClick={handleSignInGoogle}
