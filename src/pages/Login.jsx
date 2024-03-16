@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../contexts/AuthContext";
-import LogoGoogle from "../assets/google.png";
-// import LogoFacebook from "../assets/facebook.png";
+// import LogoGoogle from "../assets/google.png";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -15,8 +14,7 @@ const LoginPage = () => {
   } = useForm();
   const {
     signIn,
-    signInGoogle,
-    // signInFacebook,
+    // signInGoogle,
     isAuthenticated,
     errors: loginError,
   } = useAuth();
@@ -28,12 +26,8 @@ const LoginPage = () => {
     setValue("password", "");
   });
 
-  const handleSignInGoogle = async () => {
+ /*  const handleSignInGoogle = async () => {
     await signInGoogle();
-  };
-
-  /* const handleSignInFacebook = async () => {
-    await signInFacebook();
   }; */
 
   useEffect(() => {
@@ -100,18 +94,7 @@ const LoginPage = () => {
                 </button>
 
                 <p className="d-block text-center mt-4">O Ingresar con: </p>
-                <div className="d-flex justify-content-center text-center pt-1">
-                  {/* <button
-                    onClick={handleSignInFacebook}
-                    className="btn btn-primary text-white fw-bold mx-1 d-flex"
-                  >
-                    <img
-                      src={LogoFacebook}
-                      style={{ width: "1.5rem" }}
-                      alt="logo facebook"
-                    />{" "}
-                    Facebook
-                  </button> */}
+                {/* <div className="d-flex justify-content-center text-center pt-1">
                   <button
                     onClick={handleSignInGoogle}
                     className="btn btn-light fw-bold text-dark mx-1 d-flex"
@@ -123,7 +106,7 @@ const LoginPage = () => {
                     />{" "}
                     Google
                   </button>
-                </div>
+                </div> */}
               </form>
 
               <div>
